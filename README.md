@@ -10,10 +10,10 @@ Dự án nghiên cứu phát hiện tin giả bằng biểu diễn văn bản Wo
 
 ## Cấu trúc repository
 - `data/`: hướng dẫn và vị trí lưu dữ liệu.
-- `notebooks_01_data_exploration.ipynb`: khám phá dữ liệu.
-- `notebooks_02_preprocessing.ipynb`: tiền xử lý dữ liệu.
-- `notebooks_03_word2vec_training.ipynb`: Word2Vec.
-- `notebooks_04_naive_bayes.ipynb`: Naive Bayes.
+- `notebooks/01_data_exploration.ipynb`: khám phá dữ liệu.
+- `notebooks/02_preprocessing.ipynb`: tiền xử lý dữ liệu.
+- `notebooks/03_word2vec_training.ipynb`: Word2Vec.
+- `notebooks/04_naive_bayes.ipynb`: Naive Bayes.
 - `src/`: mã nguồn Python dùng chung.
 - `models/`: hướng dẫn lưu mô hình.
 - `results/`: kết quả thực nghiệm.
