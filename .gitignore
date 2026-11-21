@@ -1,0 +1,29 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+env/
+
+# Dataset
+data/
+*.csv
+!results/model_comparison.csv
+
+# Model
+*.h5
+*.keras
+*.pth
+*.pt
+*.pkl
+*.joblib
+
+# Temporary files
+*.tmp
+*.log
+
+# Google Colab
+.drive/
