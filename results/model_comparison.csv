@@ -1,0 +1,8 @@
+
+Model,Embedding,Accuracy,Precision,Recall,F1-score
+Naive Bayes,Word2Vec,,,,
+CNN,Word2Vec,,,,
+RNN,Word2Vec,,,,
+Naive Bayes,BERT,,,,
+CNN,BERT,,,,
+RNN,BERT,,,,
