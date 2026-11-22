@@ -14,7 +14,7 @@ from tensorflow.keras.layers import (
     Dropout
 )
 
-from transformers import TFBertForSequenceClassification
+from transformers import AutoModelForSequenceClassification
 
 
 # Xây dựng mô hình Naive Bayes
@@ -93,24 +93,15 @@ def build_lstm(
     return model
 
 
-# Xây dựng mô hình BERT
-def build_bert_model(num_labels=2):
+# Xây dựng mô hình BERT bằng PyTorch
+def build_bert_model(
+    num_labels=2,
+    model_name="bert-base-uncased"
+):
 
-    model = TFBertForSequenceClassification.from_pretrained(
-        'bert-base-uncased',
+    model = AutoModelForSequenceClassification.from_pretrained(
+        model_name,
         num_labels=num_labels
-    )
-
-    optimizer = tf.keras.optimizers.Adam(
-        learning_rate=2e-5
-    )
-
-    model.compile(
-        optimizer=optimizer,
-        loss=tf.keras.losses.SparseCategoricalCrossentropy(
-            from_logits=True
-        ),
-        metrics=['accuracy']
     )
 
     return model
